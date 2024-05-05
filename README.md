@@ -4,7 +4,6 @@
 ![Image of website](./jpg/hangman.jpg)
 
 
-
 ## Contents 
 
 1. Introduction
@@ -203,6 +202,9 @@ You must include:
 
 
 [Back to top 🔺](## Terminal Game - HangMan)
+
+
+
 
 
 
