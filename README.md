@@ -10,7 +10,7 @@ Terminal Assignment
 
 
 
-![PEP-8](https://th.bing.com/th/id/OIP.UHNt7KM6BJprx1GWUiv9hAAAAA?rs=1&pid=ImgDetMain)
+![Image of website](./jpg/pep.jpg)
 
 pep8 - used as the style guide for this app
 
