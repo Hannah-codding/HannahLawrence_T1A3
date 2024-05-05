@@ -5,13 +5,40 @@
 
 
 
-## Project discription
+## Contents 
+
+1. Introduction
+2. The User Experience
+    1. [User Goals](#user-goals)
+    2. [Project Goals](#project-goals)
+3. [Design and Flow](#design-and-flow)
+    1. [Flow Chart](#flow-chart)
+    2. [Flow Chart with Function Names and Variables](#flow-chart-with-function-names-and-variables)
+    3. [Titles and Headings](#titles-and-headings)
+4. Links
+    1. Sourse control repository
+    2. Video Presentation
+    3. Github Repository
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+## Introduction 
+#### Project discription
 *Design, implement and test a terminal application and throughout the process demonstrate that you are able to use a range of developer tools. The mandatory requirements/constraints for your application are:* 
     - *acept user input in the form of a file or text input* 
     - *produce printed output or interact with the file system*
 
-The HANGMAN game will be accessable within a terminal enviroment. This program uses Python. 
-
+The HANGMAN game will be accessable within a terminal enviroment. 
 
 		  ____   
 		 I    I  
@@ -19,10 +46,31 @@ The HANGMAN game will be accessable within a terminal enviroment. This program u
 		 I    0
 		 I   ⅃ L   
 		_I_________    
-		
+
+## The User Experience 
+The user or player is promted to play the game once they have accessed the applocation. 
+
+### Steps to install the application 
+Please download VScode or a simlar application and Python before opening the application.
+1. download the repository from GitHub 
+2. Extract files from the ZIP
+3. Right click on folder called 'HannahLawrence_T1A3' 
+4. Within the drop down menu open the application in VS code
+5. Open terminal within VScode
+6. Run game by typing the following within the VScode terminal: 
 
 
-# Important links
+### Style Conventions used
+
+![PEP-8](./jpg/pep.jpg)
+
+
+Pep8 was chosen as it allows for clean and clear code. This will ensure that the file runs correctly and is easy to read. 
+Please refer to the image above to see some of the standard conventions for PEP-8. 
+
+
+
+## Important links
 [Sourse control repository](https://???)
 
 [Video Presentation](https://???)
@@ -42,52 +90,8 @@ The HANGMAN game will be accessable within a terminal enviroment. This program u
 
 
 
-## Contents 
-
-1. [Introduction](#introduction)
-2. [The User Experience](#the-user-experience)
-    1. [User Goals](#user-goals)
-    2. [Project Goals](#project-goals)
-3. [Design and Flow](#design-and-flow)
-    1. [Flow Chart](#flow-chart)
-    2. [Flow Chart with Function Names and Variables](#flow-chart-with-function-names-and-variables)
-    3. [Titles and Headings](#titles-and-headings)
-4. Important links
-    1. Sourse control repository
-    2. Video Presentation
-    3. Github Repository
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
-
-## Steps to install the application 
-Please download VScode or a simlar application and Python before opening the application.
-1. download the repository from GitHub 
-2. Extract files from the ZIP
-3. Right click on folder called 'HannahLawrence_T1A3' 
-4. Within the drop down menu open the application in VS code
-5. Open terminal within VScode
-6. Run game by typing the following within the VScode terminal: 
-
-
-
-
-
-## Style Conventions used
-
-![PEP-8](./jpg/pep.jpg)
-
-
-Pep8 was chosen as it allows for clean and clear code. This will ensure that the file runs correctly and is easy to read. 
-Please refer to the image above to see some of the standard conventions for PEP-8. 
 
 
 ## Sitemap
@@ -201,7 +205,6 @@ You must include:
 
 
 [Back to top 🔺](## Terminal Game - HangMan)
-
 
 
 
