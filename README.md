@@ -8,17 +8,19 @@
 ## Contents 
 
 1. Introduction
-2. The User Experience
-    1. [User Goals](#user-goals)
-    2. [Project Goals](#project-goals)
-3. [Design and Flow](#design-and-flow)
-    1. [Flow Chart](#flow-chart)
-    2. [Flow Chart with Function Names and Variables](#flow-chart-with-function-names-and-variables)
-    3. [Titles and Headings](#titles-and-headings)
-4. Links
+2. Links
     1. Sourse control repository
     2. Video Presentation
     3. Github Repository
+    4. Additional Links
+3. The User Experience
+    1. [User Goals](#user-goals)
+    2. [Project Goals](#project-goals)
+4. [Design and Flow](#design-and-flow)
+    1. [Flow Chart](#flow-chart)
+    2. [Flow Chart with Function Names and Variables](#flow-chart-with-function-names-and-variables)
+    3. [Titles and Headings](#titles-and-headings)
+
 
 <br>
 <br>
@@ -46,6 +48,25 @@ The HANGMAN game will be accessable within a terminal enviroment.
 		 I    0
 		 I   ⅃ L   
 		_I_________    
+<br>
+
+## Links
+
+### Important links
+[Sourse control repository](https://???)
+
+[Video Presentation](https://???)
+
+[Github Repository](https://github.com/Hannah-codding/HannahLawrence_T1A3/tree/main)
+
+#### Additional Links 
+- [Presentation Slide Deck](---)
+
+- [Pintrest Board](https://www.pinterest.com.au/hannahl4579/terminal-site-ideas/)
+
+- [Task Management](https://trello.com/invite/b/xU1mfQML/ATTIaa72f546d5e8ca253c162723a2d94776AB7FC2F1/terminal-assignment-32024)
+
+<br>
 
 ## The User Experience 
 The user or player is promted to play the game once they have accessed the applocation. 
@@ -68,30 +89,7 @@ Please download VScode or a simlar application and Python before opening the app
 Pep8 was chosen as it allows for clean and clear code. This will ensure that the file runs correctly and is easy to read. 
 Please refer to the image above to see some of the standard conventions for PEP-8. 
 
-
-
-## Important links
-[Sourse control repository](https://???)
-
-[Video Presentation](https://???)
-
-[Github Repository](https://github.com/Hannah-codding/HannahLawrence_T1A3/tree/main)
-
-
 <br>
-
-#### Additional Links 
-- [Presentation Slide Deck](---)
-
-- [Pintrest Board](https://www.pinterest.com.au/hannahl4579/terminal-site-ideas/)
-
-- [Task Management](https://trello.com/invite/b/xU1mfQML/ATTIaa72f546d5e8ca253c162723a2d94776AB7FC2F1/terminal-assignment-32024)
-
-
-
-
-
-
 
 
 ## Sitemap
