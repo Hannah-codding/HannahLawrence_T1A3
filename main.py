@@ -17,4 +17,88 @@ def create_menu():
     user_choice = input       ("Enter your letter: ")
     return user_choice
 
+
+>>> alien.start
+   _________________________________________________
+ /                                                  \
+| WELCOME TO MY TERMINAL GAME!                       |
+| THIS HAS BEEN CREATED USING PYTHON! HOPE YOU CAN   |
+| GUESS THE WORD INTIME. USE THE CLUES FOR HELP!     | 
+ \                                                  /
+  =================================================
+                                                 \
+                                                  \
+                                                    ^__^
+                                                    (oo)
+                                                   <(__)>
+                                                    |  |
+
+
+
+
+void printHangman
+
+>>> hang_start = r'''
+		  ____   
+		 I    I  
+		 I       
+		 I       
+		 I       
+		_I_________    
+		
+'''
+
+
+>>> hang_one = r'''
+		  ____   
+		 I    I  
+		 I    O   
+		 I       
+		 I       
+		_I_________    
+		
+'''
+>>> hang_two = r'''
+		  ____   
+		 I    I  
+		 I   _O_  
+		 I       
+		 I       
+		_I_________    
+		
+'''
+
+>>> hang_three = r'''
+		  ____   
+		 I    I  
+		 I   _O_ 
+		 I    0 
+		 I       
+		_I_________   
+		
+'''
+
+>>> hang_four = r'''
+		  ____   
+		 I    I  
+		 I   _O_ 
+		 I    0 
+		 I   /    
+		_I_________    
+		
+'''
+
+>>> hang_five = r'''
+		  ____   
+		 I    I  
+		 I   _O_ 
+		 I    0
+		 I   ⅃ L   
+		_I_________    
+		
+'''
+
+
+
 file_name = "list.csv"
+
