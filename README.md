@@ -1,8 +1,16 @@
 # HannahLawrence_T1A3 
-
-![Image of website](./jpg/hangman.jpg)
 ####  Terminal Game - HangMan
 
+![Image of website](./jpg/hangman.jpg)
+
+
+
+## Project discription
+*Design, implement and test a terminal application and throughout the process demonstrate that you are able to use a range of developer tools. The mandatory requirements/constraints for your application are:* 
+    - *acept user input in the form of a file or text input* 
+    - *produce printed output or interact with the file system*
+
+The HANGMAN game will be accessable within a terminal enviroment. This program uses Python. 
 		  ____   
 		 I    I  
 		 I   _O_ 
@@ -10,12 +18,6 @@
 		 I   ⅃ L   
 		_I_________    
 		
-
-## Project discription
-*Design, implement and test a terminal application and throughout the process demonstrate that you are able to use a range of developer tools. The mandatory requirements/constraints for your application are:* 
-    - *acept user input in the form of a file or text input* 
-    - *produce printed output or interact with the file system*
-
 
 
 # Important links
@@ -77,14 +79,13 @@ Please download VScode or a simlar application and Python before opening the app
 
 
 
-## Style Used 
+## Style Conventions used
 
 ![PEP-8](./jpg/pep.jpg)
 
 
-Pep8 - used as the style guide for this app to ensure a clean code. 
-
-
+Pep8 was chosen as it allows for clean and clear code. This will ensure that the file runs correctly and is easy to read. 
+Please refer to the image above to see some of the standard conventions for PEP-8. 
 
 
 ## Sitemap
@@ -101,17 +102,19 @@ Pep8 - used as the style guide for this app to ensure a clean code.
 #### Loop
 - The file will keep running until the user has either guessed the word or the hangman is complete. 
 
-#### Fin
+#### Finish
 - The game will either show if you have won or lost. 
 
 *follow steps to run file again*
 
 
+R6
 
-# Introduction
-cs
+Develop a list of features that will be included in the application. It must include:
 
+- at least THREE features
 
+- describe each feature
 
 
 
@@ -121,12 +124,24 @@ Google python style guide
 
 
 
-# Applicaton ideas
-Address book
-Recipe book
-Expense tracker
-Blackjack
-Hangman
+
+## Implementation plan which:
+- outlines how each feature will be implemented and a checklist of tasks for each feature
+- prioritise the implementation of different features, or checklist items within a feature
+- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
+
+Utilise a suitable project management platform to track this implementation plan.
+
+Provide screenshots/images and/or a reference to an accessible project management platform used to track this implementation plan. 
+
+
+> Your checklists for each feature should have at least 5 items.
+
+
+
+
+
+
 
 
 
@@ -143,12 +158,6 @@ Hangman
 <br>
 
 
-## Wireframes
-
-- Mobile View: [MobileWireframes](./assets/mobilewireframes/moblie.pdf)
-
-
-- Desk Top: [DesktopWireframes](./assets/desktopwireframes/desktop.pdf)
 
 
 
@@ -158,30 +167,6 @@ Hangman
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-R5
-
-Identify any code style guide or styling conventions that the application will adhere to.
-
-Reference the chosen style guide appropriately.
-
-R6
-
-Develop a list of features that will be included in the application. It must include:
-
-- at least THREE features
-
-- describe each feature
 
 
 Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
@@ -195,19 +180,6 @@ Note: Ensure that your features above allow you to demonstrate your understandin
 
 Consult with your educator to check your features are sufficient .
 
-R7
-
-Develop an implementation plan which:
-- outlines how each feature will be implemented and a checklist of tasks for each feature
-- prioritise the implementation of different features, or checklist items within a feature
-- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
-
-Utilise a suitable project management platform to track this implementation plan.
-
-Provide screenshots/images and/or a reference to an accessible project management platform used to track this implementation plan. 
-
-
-> Your checklists for each feature should have at least 5 items.
 
 R8
 
@@ -227,7 +199,6 @@ You must include:
 
 
 [Back to top 🔺](## Terminal Game - HangMan)
-
 
 
 
