@@ -8,11 +8,13 @@ from colored import Fore, Back, Style
 from hangman_functions import add_hangman, remove_hangman, mark_hangman, view_hangman
 
 print(f"{Fore.red}{Back.purple}Welcome to the HANGMAN application{Style.reset}")
+#  alternative script- print(f"{Fore.black}{Back.white}Welcome to the HANGMAN application!\n\n")
+
+#  Subheading:
+    print("Choose the first letter for the hangman!")
 
 def create_menu():
-    print("Choose the first letter for the hangman")
-
-    user_choice = input("Enter your letter: ")
+    user_choice = input       ("Enter your letter: ")
     return user_choice
 
 file_name = "list.csv"
