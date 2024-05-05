@@ -11,6 +11,8 @@
     - *produce printed output or interact with the file system*
 
 The HANGMAN game will be accessable within a terminal enviroment. This program uses Python. 
+
+
 		  ____   
 		 I    I  
 		 I   _O_ 
