@@ -1,5 +1,5 @@
 # HannahLawrence_T1A3 
-####  Terminal Game - HangMan
+####  Terminal Game - HANGMAN
 
 ![Image of website](./jpg/hangman.jpg)
 
