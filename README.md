@@ -1,18 +1,15 @@
-# HannahLawrence_T1A3
-Terminal Assignment
-                         
+# HannahLawrence_T1A3                 
 ![Image of website](./jpg/hangman.jpg)
+##  Terminal Game - HangMan
+		  ____   
+		 I    I  
+		 I   _O_ 
+		 I    0
+		 I   ⅃ L   
+		_I_________    
+		
 
 
-
-
-
-
-
-
-![Image of website](./jpg/pep.jpg)
-
-pep8 - used as the style guide for this app
 
 ## Project discription
 *You are to design, implement and test a terminal application and throughout the process demonstrate that you are able to use a range of developer tools. The mandatory requirements/constraints for your application are:* 
@@ -45,7 +42,21 @@ pep8 - used as the style guide for this app
 <br>
 <br>
 <br>
-[Back to top 🔺](# )
+
+
+
+
+
+![PEP-8](./jpg/pep.jpg)
+
+
+pep8 - used as the style guide for this app
+
+
+
+
+[Back to top 🔺](## Terminal Game - HangMan)
+
 
 Examples 
 ```
@@ -223,6 +234,9 @@ You must include:
 - any dependencies required by the application to operate
 - any system/hardware requirements
 - how to use any command line arguments made for the application
+
+
+
 
 
 
