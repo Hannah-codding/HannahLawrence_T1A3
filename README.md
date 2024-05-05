@@ -1,6 +1,8 @@
-# HannahLawrence_T1A3                 
+# HannahLawrence_T1A3 
+
 ![Image of website](./jpg/hangman.jpg)
-##  Terminal Game - HangMan
+####  Terminal Game - HangMan
+
 		  ____   
 		 I    I  
 		 I   _O_ 
@@ -9,12 +11,29 @@
 		_I_________    
 		
 
-
-
 ## Project discription
-*You are to design, implement and test a terminal application and throughout the process demonstrate that you are able to use a range of developer tools. The mandatory requirements/constraints for your application are:* 
+*Design, implement and test a terminal application and throughout the process demonstrate that you are able to use a range of developer tools. The mandatory requirements/constraints for your application are:* 
     - *acept user input in the form of a file or text input* 
     - *produce printed output or interact with the file system*
+
+
+
+# Important links
+[Sourse control repository](https://???)
+
+[Video Presentation](https://???)
+
+[Github Repository](https://github.com/Hannah-codding/HannahLawrence_T1A3/tree/main)
+
+
+<br>
+
+#### Additional Links 
+- [Presentation Slide Deck](---)
+
+- [Pintrest Board](https://www.pinterest.com.au/hannahl4579/terminal-site-ideas/)
+
+- [Task Management](https://trello.com/invite/b/xU1mfQML/ATTIaa72f546d5e8ca253c162723a2d94776AB7FC2F1/terminal-assignment-32024)
 
 
 
@@ -45,56 +64,53 @@
 
 
 
+## Steps to install the application 
+Please download VScode or a simlar application and Python before opening the application.
+1. download the repository from GitHub 
+2. Extract files from the ZIP
+3. Right click on folder called 'HannahLawrence_T1A3' 
+4. Within the drop down menu open the application in VS code
+5. Open terminal within VScode
+6. Run game by typing the following within the VScode terminal: 
 
+
+
+
+
+## Style Used 
 
 ![PEP-8](./jpg/pep.jpg)
 
 
-pep8 - used as the style guide for this app
+Pep8 - used as the style guide for this app to ensure a clean code. 
 
 
 
 
-[Back to top 🔺](## Terminal Game - HangMan)
+## Sitemap
+
+![sitemap](./jpg/sitemap.jpg)
 
 
-Examples 
-```
---employee-id     <employee id>
---first-name      <first name>
---last-name       <last name>
---phone-number    <phone number>
---job-title       <job title>
---max-salary      <max salary>
---min-salary      <min salary>
---max-start-date  <max start date>
---min-start-date  <min start date>
-```
+### Sitemap Detailed Explanation 
 
+#### Home
+- Game intoduction (title ect)
+- Promt for the first letter to be entred
 
+#### Loop
+- The file will keep running until the user has either guessed the word or the hangman is complete. 
 
+#### Fin
+- The game will either show if you have won or lost. 
 
-# Important links
-[Sourse control repository](https://???)
-
-[Video Presentation](https://???)
-
-[Github Repository](https://???)
-<br>
-
+*follow steps to run file again*
 
 
 
 # Introduction
 cs
 
-
-#### Additional Links 
-- [Presentation Slide Deck](---)
-
-- [Pintrest Board](---)
-
-- [Task Management](https://trello.com/invite/b/xU1mfQML/ATTIaa72f546d5e8ca253c162723a2d94776AB7FC2F1/terminal-assignment-32024)
 
 
 
@@ -123,40 +139,8 @@ Hangman
 
 
 
-#### Additional Links 
-- [Presentation Slide Deck](./docs/PortfolioWebsite.pptx)
-
-- [Pintrest Board](https://pin.it/6fFBCMTg1)
-
 <br>
 <br>
-
-## Sitemap
-
-![sitemap](./docs/SITE%20MAPS.jpg)
-
-
-### Sitemap Detailed Explanation 
-
-#### Home
-- Accessible via the logo and 'home' nav.
-- The primary intention is to engage visitors and encourage exploration of the site.
-
-#### About Me
-- Includes a brief biography and description of skills.
-- Placed at the start of the nav bar for hierarchical representation.
-
-#### Portfolio
-- Features projects as assets on the page.
-- Each project is showcased with a brief description.
-
-#### Blog
-- Subpages for various blog posts.
-- Accessible via the 'blog' subpage, ensuring ease of navigation.
-
-#### Contact Me
-- Provides external links to GitHub, LinkedIn, and Instagram.
-- Allows visitors to reach out for further contact.
 
 
 ## Wireframes
@@ -229,11 +213,21 @@ R8
 
 Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
 
+
+
+
+
 You must include:
 - steps to install the application
 - any dependencies required by the application to operate
 - any system/hardware requirements
 - how to use any command line arguments made for the application
+
+
+
+
+[Back to top 🔺](## Terminal Game - HangMan)
+
 
 
 
