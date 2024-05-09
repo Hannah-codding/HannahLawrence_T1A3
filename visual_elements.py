@@ -99,7 +99,7 @@ winner_message = r'''
 
              ___________
             ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-            ⠹⣿⣿WINNER!⣿⡟
+            ⠹⣿⣿WINNER!⣿⡟  
              ⣿⣿⣿⣿⣿⣿⣿⣿ 
               ⠹⣿⣿⣿⣿⣿⡟
                ⣿⣿⣿⣿⣿
@@ -115,21 +115,6 @@ error_message = r'''
 
 ERROR!PLEASE TYPE A VALID LETTER
 
+
 '''
 
-
->>> alien.start = r'''
-   _________________________________________________
- /                                                  \
-| WELCOME TO MY TERMINAL GAME!                       |
-| THIS HAS BEEN CREATED USING PYTHON! HOPE YOU CAN   |
-| GUESS THE WORD INTIME. USE THE CLUES FOR HELP!     | 
- \                                                  /
-  =================================================
-                                                 \
-                                                  \
-                                                    ^__^
-                                                    (oo)
-                                                   <(__)>
-                                                    |  |
-'''
