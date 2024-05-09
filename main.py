@@ -1,14 +1,97 @@
 # System packages
 import os.path
 
+
+# Imports of our own functions
+from visual_elements import hang_a, hang_b, hang_c, hang_d, hang_end, hang_start, gameover_message, looser_message, winner_message
+
 # External packages
 from colored import Fore, Back, Style
 
 # Imports of our own functions
 from hangman_functions import add_hangman, remove_hangman, mark_hangman, view_hangman
 
-print(f"{Fore.red}{Back.purple} Welcome to the HANGMAN application {Style.reset}")
-#  alternative script- print(f"{Fore.black}{Back.white}Welcome to the HANGMAN application!\n\n")
+
+
+
+
+
+def choose_word():
+    word_list = ["plant", "happy", "hello", "whale", "silly"]
+    return random.choice(word_list).upper()
+#  list of words that the program will run through
+
+
+def display_word(word, guessed_letters):
+    display = ""
+    for letter in word:
+        if letter in guessed_letters:
+            display += letter
+        else:
+            display += "_"
+    return display
+
+def main():
+    word = choose_word()
+    guessed_letters = set()
+    tries = 6
+    
+    
+    print(f"{Fore.red}{Back.purple} Welcome to the HANGMAN application {Style.reset}")
+    #  alternative script- print(f"{Fore.black}{Back.white}Welcome to the HANGMAN application!\n\n")
+    print(display_word(word, guessed_letters))
+
+    while not all(letter in guessed_letters for letter in word) and tries > 0:
+        guess = input('Please guess a letter or word: ').upper()
+
+        if len(guess) == 1 and guess.isalpha():
+            if guess in guessed_letters:
+                print("You've already guessed that letter.")
+            elif guess in word:
+                print("Good guess!")
+                guessed_letters.add(guess)
+            else:
+                print("Wrong guess!")
+                tries -= 1
+        elif len(guess) == len(word) and guess.isalpha():
+            if guess == word:
+                print("Congratulations! You guessed the word!")
+                break
+            else:
+                print("Wrong guess!")
+                tries -= 1
+        else:
+            print('Not a valid guess.')
+
+        print(display_word(word, guessed_letters))
+        print(f"Tries left: {tries}")
+
+    if all(letter in guessed_letters for letter in word):
+        print("Congratulations! You guessed the word!")
+    else:
+        print(f"Sorry, you lost! The word was: {word}")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #  Subheading:
 print("Choose the first letter for the hangman!")
@@ -18,25 +101,11 @@ def create_menu():
     return user_choice
 
 
->>> alien.start = r'''
-   _________________________________________________
- /                                                  \
-| WELCOME TO MY TERMINAL GAME!                       |
-| THIS HAS BEEN CREATED USING PYTHON! HOPE YOU CAN   |
-| GUESS THE WORD INTIME. USE THE CLUES FOR HELP!     | 
- \                                                  /
-  =================================================
-                                                 \
-                                                  \
-                                                    ^__^
-                                                    (oo)
-                                                   <(__)>
-                                                    |  |
-'''
 
 
 while not gessed and tried > 0:
     guess = input('please guess a letter or wrd: ').upper()
+   
     if len (guess) == 1 and guess.isalpha():
     
     elif len (guess) == len(word) and guess.isalpha()
@@ -57,129 +126,14 @@ print('YOU LOOSE! Better luck next time!')
 
 
 
-#  The below is the hangman visual 
 
-void printHangman
-
-hang_start = r'''
-		  ____   
-		 I    I  
-		 I       
-		 I       
-		 I       
-		_I_________    
-		
-'''
-
-
-hang_one = r'''
-		  ____   
-		 I    I  
-		 I    O   
-		 I       
-		 I       
-		_I_________    
-		
-'''
-hang_two = r'''
-		  ____   
-		 I    I  
-		 I   _O_  
-		 I       
-		 I       
-		_I_________    
-		
-'''
-
-hang_three = r'''
-		  ____   
-		 I    I  
-		 I   _O_ 
-		 I    0 
-		 I       
-		_I_________   
-		
-'''
-
-hang_four = r'''
-		  ____   
-		 I    I  
-		 I   _O_ 
-		 I    0 
-		 I   /    
-		_I_________    
-		
-'''
-
-hang_five = r'''
-		  ____   
-		 I    I  
-		 I   _O_ 
-		 I    0
-		 I   ⅃ L   
-		_I_________    
-
-'''
-
-gameover_message = r'''
-
-
-██████████      ████████     ████        ████   █████████⣿
-██             ██      ██    ██ ██      ██ ██   ██
-██            ██        ██   ██  ██    ██  ██   ██
-██            ██        ██   ██   ██  ██   ██   ██
-██    ████    ████████████   ██     ██     ██   ████████
-██      ██    ██        ██   ██            ██   ██
-██████████    ██        ██   ██            ██   █████████⣿
-
- ⠀              ⠀⠀⠀⠀⠀  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣴⣶⣦⣤⡀⠀
-⠀       ⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣠⡇⢰⣶⣶⣾⡿⠷⣿⣿⣿⡟⠛⣉⣿⣿⣿⠆
-⠀⠀       ⠀⠀⠀⠀⠀⢀⣤⣶⣿⣿⡎⣿⣿⣦⠀⠀⠀⢀⣤⣾⠟⢀⣿⣿⡟⣁⠀⠀⣸⣿⣿⣤⣾⣿⡿⠛⠁⠀
-⠀⠀       ⠀⠀⠀⣠⣾⣿⡿⠛⠉⢿⣦⠘⣿⣿⡆⠀⢠⣾⣿⠋⠀⣼⣿⣿⣿⠿⠷⢠⣿⣿⣿⠿⢻⣿⣧⠀⠀⠀
-⠀⠀       ⠀⠀⣴⣿⣿⠋⠀⠀⠀⢸⣿⣇⢹⣿⣷⣰⣿⣿⠃⠀⢠⣿⣿⢃⣀⣤⣤⣾⣿⡟⠀⠀⠀⢻⣿⣆⠀⠀
-⠀⠀       ⠀⠀⣿⣿⡇⠀⠀⢀⣴⣿⣿⡟⠀⣿⣿⣿⣿⠃⠀⠀⣾⣿⣿⡿⠿⠛⢛⣿⡟⠀⠀⠀⠀⠀⠻⠿⠀⠀
-⠀⠀       ⠀⠀⠹⣿⣿⣶⣾⣿⣿⣿⠟⠁⠀⠸⢿⣿⠇⠀⠀⠀⠛⠛⠁⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀       ⠀⠀⠀⠈⠙⠛⠛⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-
-'''
-looser_message = r'''
-
-               ██               ██
-             ████▄  ▄▄▄▄▄▄▄  ▄████
-               ▀▀█▄█████████▄█▀▀
-                 █████████████
-                 ██▀▀▀███▀▀▀██
-                 ██⣿⣿███⣿⣿██
-                 █████▀▄▀█████
-                  ███████████
-              ▄▄▄██  █▀█▀█  ██▄▄▄
-              ▀▀██           ██▀▀
-                ▀▀           ▀▀
-
-'''
-winner_message = = r'''
-
-             ___________
-             ███████████
-             ██WINNER!██
-             ███████████ 
-              █████████
-              █████████
-                 ) (
-                 ███ 
-               ███████
-              `"""""""`
-            
-'''
-
-
-error_message = r'''
-
-ERROR!PLEASE TYPE A VALID LETTER
-
-'''
 
 
 file_name = "list.csv"
+
+
+print("Thank you for using the hangman application")
+
+
 
 
