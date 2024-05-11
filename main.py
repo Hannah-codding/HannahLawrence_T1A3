@@ -6,7 +6,7 @@ import cowsay
 
 # Imports of our own functions
 from visual_elements import hang_start, hang_a, hang_b, hang_c, hang_d, hang_end, gameover_message, looser_message, winner_message, hang_pre
-from colourfiles import welcome_message # Needed to sepreate this as it didnt work within the file. 
+from intro import welcome_message # Needed to sepreate this as it didnt work within the file. 
 
 # External packages
 from colored import Fore, Back, Style  # this will allow for colours to the background of the game header. 
@@ -25,31 +25,35 @@ hang_stages = [hang_pre, hang_start, hang_a, hang_b, hang_c, hang_d, hang_end, ]
 
 #  Letter guessing 
 def display_word(word, guessed_letters):
-    display = ""
+    display = "" 
     for letter in word:
         if letter in guessed_letters:
-            display += letter
+            display += letter #  setting peramitors if the letter guessed is correct using the plus equals operator  
         else:
-            display += "_"
-    return display
+            display += "_"    #  setting peramitors if the letter guessed is incorrect 
+    return display 
 
 #  Menu for the game
-def display_menu():
-    print(welcome_message)
-    print("1. Start Game")
-    print("2. See List of Words")
-    print("3. Exit")
+#  def display_menu():
+    #  print(welcome_message)
+   #   print("1. Start Game")
+   #   print("2. See List of Words")
+   #   print("3. Exit")
 
 
 def main():
     while True:
+
+        
+        #  choice = input("Enter your choice: ")
+
         word = choose_word()
         guessed_letters = set()
         tries = 9 #  trys corrispond to the hangman graphics 
         
 
         print(welcome_message) # this is an alternative to the above as i encurred some issues regarding the colour
-       # cowsay. ('WELCOME') # this is to embed a style into the prgram 
+        # cowsay. ('WELCOME') # this is to embed a style into the prgram 
         # print(f"{Fore.pink}{Back.pink} Welcome to the HANGMAN application {Style.reset}")
         # print(colored("Welcome to the HANGMAN application", fore="pink", back="pink"))
 
@@ -81,8 +85,8 @@ def main():
                 else:
                     print("Wrong guess! Good try!")
                     tries -= 1
-     #       else:
-      #          print('Not a valid guess.') #this was removed as the error handeling was updated to be inlcuded above. this message was not working evertime within the code
+             #       else:
+             #       print('Not a valid guess.') #this was removed as the error handeling was updated to be inlcuded above. this message was not working evertime within the code
 
             print(display_word(word, guessed_letters))
             print(f"Tries left: {tries}") 
@@ -104,7 +108,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
 
