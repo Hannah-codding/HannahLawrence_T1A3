@@ -11,7 +11,7 @@ from into import  welcome_message  # Needed to separate this as it didn't work w
 from Wordlist import word_list  # Secret word list
 
 # External packages
-from colored import Fore, Back, Style  # this will allow for colors to the background of the game header.
+from colored import Fore, Back, Style  # this will allow for colors to the background some of the games elements. 
 
 
 #  List of words that the program will run through.
@@ -34,13 +34,6 @@ def display_word(word, guessed_letters):
             display += "_"  #  setting parameters if the letter guessed is incorrect
     return display
 
-#  Menu for the game - will be great to add in the future iterations for further deail
-#  def display_menu():
-   #   print(welcome_message)
-   #   print("1. Start Game")
-   #   print("2. See List of Words")
-   #   print("3. Exit")
-
 
 def main_app():
     while True:
@@ -58,17 +51,6 @@ def main_app():
             guess = input('\033[1mPlease guess a LETTER: \033[0m').upper()
 
 
-            if guess in guessed_letters:
-                print(f"{Fore.white}{Back.blue}     You've already guessed that letter.     {Style.reset}")
-                print(f"{Fore.white}{Back.yellow}               \033[1mType 'EXIT' to EXIT game.              \033[0m {Style.reset}")
-            elif guess in word:
-                print(f"{Fore.white}{Back.green}                  Good guess!                  {Style.reset}")
-                guessed_letters.add(guess)
-            else:
-                print(f"{Fore.white}{Back.blue}          Wrong guess! Good try!             {Style.reset}")
-                tries -= 1
-                print(hang_stages[7 - tries])  # Display current hang_stage
-
             
             if not guess.isalpha() or len(guess) != 1:
                 if guess == "EXIT":
@@ -78,7 +60,17 @@ def main_app():
                 print(f"{Fore.white}{Back.blue}    ERROR! Please enter a single letter.  {Style.reset}")
                 print(f"{Fore.white}{Back.yellow}               \033[1mType 'EXIT' to EXIT game.              \033[0m {Style.reset}")
 
-                
+
+            if guess in guessed_letters:
+                print(f"{Fore.white}{Back.blue}     You've already guessed that letter.     {Style.reset}")
+                print(f"{Fore.white}{Back.yellow}               \033[1mType 'EXIT' to EXIT game.              \033[0m {Style.reset}")
+            elif guess in word:
+                print(f"{Fore.white}{Back.green}                  Good guess!                  {Style.reset}")
+                guessed_letters.add(guess)
+            else:
+                print(f"{Fore.white}{Back.blue}          Wrong guess! Keep going!             {Style.reset}")
+                tries -= 1
+                print(hang_stages[7 - tries])  # Display current hang_stage
 
             print(display_word(word, guessed_letters))
             print(f"Tries left: {tries}")
@@ -100,3 +92,8 @@ def main_app():
             break
 
 main_app()
+
+
+
+
+    
